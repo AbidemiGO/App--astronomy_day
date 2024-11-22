@@ -22,4 +22,6 @@ response = requests.get(image_url)
 with open(image_filepath, "wb") as file:
        file.write(response.content)
 
-
+st.title(title)
+st.image(image_filepath)
+st.write(explanation)
